@@ -61,10 +61,10 @@
 
         tri {
             bindings = <
-&trans      &out OUT_USB  &out OUT_BLE  &out OUT_TOG  &rgb_ug RGB_OFF  &rgb_ug RGB_ON    &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR   &bt BT_CLR_ALL
-&trans      &trans        &trans        &trans        &trans           &trans            &bl BL_TOG        &bl BL_DEC         &bl BL_INC    &trans        &trans       &trans
-&sys_reset  &bootloader   &trans        &trans        &trans           &trans            &ext_power EP_ON  &ext_power EP_OFF  &trans        &trans        &bootloader  &sys_reset
-                                        &trans        &trans           &trans            &trans            &trans             &trans
+&bt BT_CLR_ALL  &out OUT_USB  &out OUT_BLE  &out OUT_TOG  &rgb_ug RGB_OFF  &rgb_ug RGB_ON    &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR   &bt BT_CLR_ALL
+&bt BT_SEL 0    &bt BT_SEL 1  &trans        &trans        &trans           &trans            &bl BL_TOG        &bl BL_DEC         &bl BL_INC    &trans        &trans       &trans
+&sys_reset      &bootloader   &trans        &trans        &trans           &trans            &ext_power EP_ON  &ext_power EP_OFF  &trans        &trans        &bootloader  &sys_reset
+                                            &trans        &trans           &trans            &trans            &trans             &trans
             >;
         };
     };
